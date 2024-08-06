@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naavi</title>
+    <link rel="stylesheet" href="/static/styles.css">
+    <link rel="icon" href="/static/favicon.jpg" type="image/x-icon">
+</head>
+<body>
+    <div class="logo-container">
+        <img src="/static/nav_logo.svg" alt="logo Icon" class="logo-icon">
+        <p>The search engine for pathway generation</p>
+    </div>
+    <main>
+        <h2>For crafting a personalized education plan, please summarize your background, educational milestones, aspirations, higher education ambitions, and financial considerations.</h2>
+        
+        <!-- Introductory message -->
+        <div class="intro-message-container">
+            <div class="intro-bubble">{{ intro_message }}</div>
+        </div>
+
+        <!-- Chat container -->
+        <div id="chat-container" class="chat-container">
+            <!-- Chat bubbles will be appended here -->
+        </div>
+
+        <!-- User input form -->
+        <form id="chat-form" class="user-input-form">
+            <div class="input-container">
+                <textarea id="user-input" placeholder="Ask your question" rows="4"></textarea>
+                <button type="submit" id="send-btn">Send</button>
+            </div>
+        </form>
+
+        <!-- Create Pathway button -->
+        <button id="pathway-btn" class="hidden">Create Pathway</button>
+
+        <!-- DP-OPT Content -->
+<!--         <section class="dp-opt-content">
+            <h2 class="dp-opt-heading">Differentially-Private Offsite Prompt Tuning (DP-OPT)</h2>
+            <p class="dp-opt-intro">Welcome to our website! Here, you will learn about Differentially-Private Offsite Prompt Tuning (DP-OPT), an innovative solution designed to protect your privacy while using our educational tools. This is especially important for students who want to use these tools without worrying about personal information being exposed.</p>
+            
+            <h4 class="dp-opt-subheading">What is DP-OPT?</h4>
+            <p class="dp-opt-text">DP-OPT is a method that helps create prompts without compromising the privacy of your data. <em>Typically, fine-tuning requires sensitive data, which can be risky.</em> <strong>DP-OPT ensures your data remains confidential by handling the tuning process on your own device.</strong> It uses advanced privacy techniques to make sure no identifiable information is revealed.</p>
+            
+            <img src="../static/featured.png" alt="Placeholder Image 1">
+
+            <h4 class="dp-opt-subheading">Key Features of DP-OPT</h4>
+            <ul class="dp-opt-features">
+                <li>Privacy Protection: With DP-OPT, you can tune prompts on your device, keeping your data safe from external servers. This is crucial for maintaining privacy, especially for students handling sensitive information.</li>
+                <li>Effective Performance: Even with these privacy measures, DP-OPT maintains high performance, making it suitable for various tasks like writing help, research, and study aids.</li>
+                <li>Versatile Prompts: The prompts you create can be used with different models, ensuring flexibility without sacrificing privacy.</li>
+            </ul>
+            
+            <h4 class="dp-opt-subheading">How Does DP-OPT Work?</h4>
+            <p class="dp-opt-text"><strong>Local Prompt Tuning:</strong> You generate and tune prompts on your own device, ensuring your data never leaves your control.</p>
+            <p class="dp-opt-text"><em>Differential Privacy:</em> The process adds noise to your data, protecting individual data points from being identified.</p>
+            
+            <img src="../static/x4.png" alt="Placeholder Image 2">
+
+            <h4 class="dp-opt-subheading">How to Use DP-OPT with Our Chatbot</h4>
+            <ol class="dp-opt-instructions">
+                <li>Enter Your Details: The chatbot will ask for your school grade, curriculum, and other relevant information. This helps us provide accurate and personalized responses.</li>
+                <li>Generate Secure Prompts: The prompts you provide are tuned on your device, ensuring your data remains private.</li>
+                <li>Get Tailored Advice: The system uses the secure prompts to offer personalized study plans, career guidance, and other helpful information without exposing your data.</li>
+            </ol>
+            
+            <h4 class="dp-opt-subheading">Why DP-OPT is Important for Students</h4>
+            <p class="dp-opt-text">DP-OPT allows you to explore and use powerful tools safely. For students, this means you can get help with your studies, plan your career, and more without risking your personal information. It also ensures compliance with data privacy regulations like GDPR, giving you peace of mind.</p>
+            
+            <h4 class="dp-opt-subheading">Future Implications</h4>
+            <p class="dp-opt-text">DP-OPT is not just for students; it has potential applications in various fields where data privacy is critical, such as healthcare, cybersecurity, and legal industries. As privacy concerns grow, methods like DP-OPT will be essential in building trust and enabling innovation.</p>
+            
+            <h4 class="dp-opt-subheading">Get Started</h4>
+            <p class="dp-opt-text">Explore our chatbot today and experience the benefits of DP-OPT. Whether you need help with your studies or career advice, we are here to assist you securely and efficiently. Enter your details, generate secure prompts, and receive the guidance you need—all while keeping your data private.</p>
+        </section> -->
+    </main>
+    <script src="/static/script.js"></script>
+</body>
+</html>

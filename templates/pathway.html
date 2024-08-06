@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pathway Results</title>
+    <link rel="stylesheet" href="/static/styles.css">
+    <link rel="icon" href="/static/favicon.jpg" type="image/x-icon">
+</head>
+<body>
+    <div class="logo-container">
+        <img src="/static/nav_logo.svg" alt="logo Icon" class="logo-icon">
+        <p>The search engine for pathway generation</p>
+    </div>
+
+    <main>
+        <h1>Your Pathway Results</h1>
+        
+        <!-- Container for pathway results -->
+        <div class="pathway-container" id="content">
+            <div class="pathway-content">
+                <pre>{{ pathway_response }}</pre>
+            </div>
+        </div>
+
+        <footer>
+            <button onclick="window.close()">Close</button>
+        </footer>
+    </main>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Hide loader and show content
+            document.getElementById('loader').classList.add('hidden');
+            document.getElementById('content').classList.remove('hidden');
+        });
+    </script>
+</body>
+</html>
